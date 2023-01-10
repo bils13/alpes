@@ -1,0 +1,160 @@
+.white {
+    background-color: $cor-secundaria;
+    color: $cor-secundaria;
+    .casa__text {
+        h1, p {
+            color: $cor-primaria;
+        }
+    }
+}
+
+.casa {
+    max-width: 100vw;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__bg {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img {
+        width: 40%;
+        img {
+            max-width: 80%;
+            border-radius: 5px;
+            box-shadow: 13px 13px 1px rgb(255, 165, 0);
+        }
+    }
+    &__text {
+        width: 60%;
+        h1 {
+            font-family: $rubik;
+            font-size: 60px;
+            color: white;
+        }
+        p {
+            width: 100%;
+            font-family: $rubik;
+            color: white;
+        }
+        &--size {
+            font-size: 80px;
+        }
+    }
+    &__btn {
+        margin-top: 10px;
+        width: 50%;
+        background-color: orange;
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
+        color: white;
+        font-size: 1em;
+        font-family: $rubik;
+        // &:hover {
+            
+        // }
+    }
+}
+
+@media (max-width: 1000px) {
+    .casa {
+        &__text {
+            h1 {
+                font-size: 40px;
+            }
+            &--size {
+                font-size: 55px;
+            }
+        }
+        &__btn {
+            width: 80%;
+            font-size: 1em;
+        }
+    }
+}
+
+
+@media (max-width: 750px) {
+    .casa {
+        height: 100%;
+        padding: 20px;
+        &__bg {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        &__text {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            h1 {
+                font-size: 2.2em;
+            }
+            &--size {
+                font-size: 2.5em;
+            }
+            p {
+                margin-top: 20px;
+                font-size: 1.2em;
+            }
+        }
+        &__btn {
+            width: 100%;
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .casa {
+        &__text {
+            h1 {
+                font-size: 1.8em;
+            }
+            &--size {
+                font-size: 2em;
+            }
+            p {
+                margin-top: 20px;
+                font-size: 1.2em;
+            }
+        }
+        &__img {
+            img {
+                box-shadow: 6px 6px 1px rgb(255, 165, 0);
+            }
+        }
+    }
+}
+
+@media (max-width: 200px) {
+    .casa {
+        &__text {
+            h1 {
+                font-size: 15vw;
+            }
+            &--size {
+                font-size: 20vw;
+            }
+            p {
+                margin-top: 20px;
+                font-size: 10vw;
+            }
+        }
+        padding: 5px;
+        &__btn {
+            padding: 2px;
+            font-size: 6vw;
+        }
+    }
+}

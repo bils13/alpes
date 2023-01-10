@@ -1,0 +1,32 @@
+@mixin designPurificadores($background-color, $height-img) {
+    position: relative;
+    width: 25%;
+    background: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background-color: white;
+        transition-duration: 2.4s;
+    }
+    img {
+        position: relative;
+        opacity: 0.3;
+        height: $height-img;
+        animation: down 1s;
+    }
+    &:hover > img {
+        opacity: 1;
+        transition-duration: 2s;
+    }   
+    h1 {
+        font-family: $fonte-principal;
+        position: absolute;
+        color: white;
+        text-shadow: black 0.1em 0.1em 0.4em;
+        font-size: 3vw;
+        white-space: wrap;
+        text-align: center;
+    }
+}

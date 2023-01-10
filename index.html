@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Alpes - Purificadores de Água</title>
+    <script src="https://kit.fontawesome.com/d2c36f106e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">
+                <img src="./img/logo.png" alt="Logo Alpes Conforto Térmico" class="nav__logo--size">
+            </div>
+            <div class="nav__text">
+                <p>Desde 1996 entregando qualidade e satisfação no segmento de venda de purificadores.</p>
+            </div>
+            <div>
+                <ul>
+                    <li class="nav__list">
+                        <i class="fa-solid fa-phone" style="margin-right: 2px;"></i>
+                        <button class="contato" value="footer__faleconosco" onclick="redirecionaModelo(event)">Contato</button>
+                    </li>
+                    <li class="nav__list no--border">
+                        <i class="fa-solid fa-location-dot" style="margin-right: 2px;"></i>
+                        <a href="https://www.google.com/maps?rlz=1C1CHBD_pt-PTBR995BR995&sxsrf=ALiCzsaOcJ-kuV5vVpu_txYNSxy3_7xY-w:1670424614481&q=alpes+purificadores+de+%C3%A1gua+%7C+bebedouros+%7C+m%C3%A1quinas+de+gelo+araraquara+hor%C3%A1rio&biw=1024&bih=625&dpr=1&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiv__n14Of7AhWJGbkGHUv7AJgQ_AUoA3oECAEQBQ" target="_blank" rel="noopener noreferrer" class="contato">Localização</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="banner__produtos">
+            <div class="produtos baby">
+                <img src="./img/purificadores/baby-branco.png" alt="Puricador Soft Baby" />
+                <h1>SOFT Baby</h1>
+            </div>
+            <div class="produtos fit">
+                <img src="./img/purificadores/fit-prata.png" alt="Purificador Soft Fit" />
+                <h1>SOFT Fit</h1>
+            </div>
+            <div class="produtos slim">
+                <img src="./img/purificadores/slim-preto.png" alt="Purificador Soft Slim" />
+                <h1>SOFT Slim</h1>
+            </div>
+            <div class="produtos star">
+                <img src="./img/purificadores/star-cereja.png" alt="Purificador Soft Star" />
+                <h1>SOFT Star</h1>
+            </div>
+        </div>
+    </section>
+    <section class="atrativo">
+        <div class="atrativo__info">
+            <div class="atrativo__icons">
+                <i class="fa-regular fa-credit-card atrativo__icons--bg"></i>
+                <h1 class="atrativo__icons--title">12x sem juros</h1>
+                <p class="atrativo__icons--text">Parcelamento em até 12x sem juros no cartão de crédito.</p>
+            </div>
+            <div class="atrativo__icons">
+                <i class="fa-solid fa-hammer atrativo__icons--bg"></i>
+                <h1 class="atrativo__icons--title">Instalação em cortesia</h1>
+                <p class="atrativo__icons--text">Entrega e instalação em cortesia para Araraquara-SP e região.</p>
+            </div>
+            <div class="atrativo__icons">
+                <i class="fa-solid fa-file-shield atrativo__icons--bg"></i>
+                <h1 class="atrativo__icons--title">Garantia 12 meses</h1>
+                <p class="atrativo__icons--text">Garantia de 12 meses nacional para qualquer assistência técnica autorizada da Everest.</p>
+            </div>
+            <div class="atrativo__icons">
+                <i class="fa-solid fa-screwdriver-wrench atrativo__icons--bg"></i>
+                <h1 class="atrativo__icons--title">Assistência técnica</h1>
+                <p class="atrativo__icons--text">Assistência técnica autorizada com a melhor mão de obra da região.</p>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="casa blue">
+        <div class="casa__bg blue">
+            <div class="casa__img">
+                <img src="./img/Purificador__instalado/purificador_instalado.png" alt="Purificador instalado">
+            </div>
+            <div class="casa__text">
+                <h1>Para sua <span class="casa__text--size">CASA</span></h1>
+                <p>Água de qualidade para <span class="text--weight">você</span> e sua <span class="text--weight">família</span>, com a tecnologia 'Melt Blown' que retém impurezas, e carvão ativado com prata coloidal para redução de cloro, odores e sabores. Elimina o abre de fecha da geladeira, troca-troca de garrafões. Possuem enorme praticidade e facilidade na instalação podendo ser fixados na parede ou postos sobre bancada.  </p>
+                <button class="casa__btn" value="purificadores__residenciais" onclick="redirecionaModelo(event);">VER MODELOS RESIDENCIAIS</button>
+            </div>
+        </div>
+    </section> -->
+    <section class="purificadores blue">   
+        <div class="purificadores__bg blue">
+            <div class="purificadores__carrousel">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/Baby/branco.png" alt="Soft Baby Branco"></div>
+                        <div class="swiper-slide"><img src="./img/Baby/cereja.png" alt="Soft Baby Cereja"></div>
+                        <div class="swiper-slide"><img src="./img/Baby/preto.png" alt="Soft Baby Preto"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="purificadores__info">
+                <h1 class="purificadores__title">Soft Baby</h1>
+                <p class="purificadores__text">Purificador de água sem refrigeração, ideal para quem busca um tamanho pequeno mas com excelente purificação.</p>
+                <p class="purificadores__text">Disponível nas cores:</p>
+                <div class="purificadores__colors">
+                    <div class="purificadores__colors--white"> </div>
+                    <div class="purificadores__colors--red"> </div>
+                    <div class="purificadores__colors--black"> </div>  
+                </div>
+                <div class="purificadores__size">
+                    <p>Altura: 28 cm</p>
+                    <p>Largura: 19,5 cm</p>
+                    <p>Profundidade: 18,5 cm</p>
+                </div>
+                <button class="purificadores__btn" value="Baby" onclick="redirecionaWpp(event);"><i class="fa-brands fa-whatsapp"></i> COMPRAR</button>
+            </div>
+        </div>
+    </section>
+    <section class="purificadores">   
+        <div class="purificadores__bg">
+            <div class="purificadores__carrousel">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/Fit/prata.png" alt="Soft Baby Prata"></div>
+                        <div class="swiper-slide"><img src="./img/Fit/cereja.png" alt="Soft Baby Cereja"></div>
+                        <div class="swiper-slide"><img src="./img/Fit/preto.png" alt="Soft Baby Preto"></div>
+                        <div class="swiper-slide"><img src="./img/Fit/branco.png" alt="Soft Baby Branco"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="purificadores__info">
+                <h1 class="purificadores__title">Soft FIT</h1>
+                <p class="purificadores__text">Purificador de água refrigerado por compressor, ideal para quem busca um tamanho pequeno mas com excelente purificação e refrigeração, armazenamento de 1.2L de água gelada.</p>
+                <p class="purificadores__text">Disponível nas cores:</p>
+                <div class="purificadores__colors">
+                    <div class="purificadores__colors--white"> </div>
+                    <div class="purificadores__colors--gray"> </div>
+                    <div class="purificadores__colors--red"> </div>
+                    <div class="purificadores__colors--black"> </div>  
+                </div>
+                <div class="purificadores__size">
+                    <p>Altura: 28 cm</p>
+                    <p>Largura: 30,5 cm</p>
+                    <p>Profundidade: 37 cm</p>
+                </div>
+                <button class="purificadores__btn" value="Baby" onclick="redirecionaWpp(event);"><i class="fa-brands fa-whatsapp"></i> COMPRAR</button>
+            </div>
+        </div>
+    </section>
+    <section class="purificadores blue">   
+        <div class="purificadores__bg blue">
+            <div class="purificadores__carrousel">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/Slim/cereja.png" alt="Soft Baby Cereja"></div>
+                        <div class="swiper-slide"><img src="./img/Slim/preto.png" alt="Soft Baby Preto"></div>
+                        <div class="swiper-slide"><img src="./img/Slim/branco.png" alt="Soft Baby Branco"></div>
+                        <div class="swiper-slide"><img src="./img/Slim/prata.png" alt="Soft Baby Prata"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="purificadores__info">
+                <h1 class="purificadores__title">Soft Slim</h1>
+                <p class="purificadores__text">Bonito e moderno, nem muito grande e nem muito pequeno, o mais vendido da categoria! Apresenta refrigeração por compressor e reservatório com 1.8L de água gelada.</p>
+                <p class="purificadores__text">Disponível nas cores:</p>
+                <div class="purificadores__colors">
+                    <div class="purificadores__colors--white"> </div>
+                    <div class="purificadores__colors--gray"> </div>
+                    <div class="purificadores__colors--red"> </div>
+                    <div class="purificadores__colors--black"> </div>  
+                </div>
+                <div class="purificadores__size">
+                    <p>Altura: 36 cm</p>
+                    <p>Largura: 27,5 cm</p>
+                    <p>Profundidade: 37 cm</p>
+                </div>
+                <button class="purificadores__btn" value="Baby" onclick="redirecionaWpp(event);"><i class="fa-brands fa-whatsapp"></i> COMPRAR</button>
+            </div>
+        </div>
+    </section>
+    <section class="purificadores">   
+        <div class="purificadores__bg">
+            <div class="purificadores__carrousel">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/Star/preto.png" alt="Soft Baby Preto"></div>
+                        <div class="swiper-slide"><img src="./img/Star/branco.png" alt="Soft Baby Branco"></div>
+                        <div class="swiper-slide"><img src="./img/Star/prata.png" alt="Soft Baby Prata"></div>
+                        <div class="swiper-slide"><img src="./img/Star/cereja.png" alt="Soft Baby Cereja"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="purificadores__info">
+                <h1 class="purificadores__title">Soft Star</h1>
+                <p class="purificadores__text">O MAIOR! Ideal para quem não tem problema com espaço e gosta de fazer receitas de suco ou encher garrafinhas, pois conta com refrigeração a compressor com capacidade de 2L de água gelada.</p>
+                <p class="purificadores__text">Disponível nas cores:</p>
+                <div class="purificadores__colors">
+                    <div class="purificadores__colors--white"> </div>
+                    <div class="purificadores__colors--gray"> </div>
+                    <div class="purificadores__colors--red"> </div>
+                    <div class="purificadores__colors--black"> </div>  
+                </div>
+                <div class="purificadores__size">
+                    <p>Altura: 36 cm</p>
+                    <p>Largura: 27,5 cm</p>
+                    <p>Profundidade: 37 cm</p>
+                </div>
+                <button class="purificadores__btn" value="Baby" onclick="redirecionaWpp(event);"><i class="fa-brands fa-whatsapp"></i> COMPRAR</button>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="casa white">
+        <div class="casa__bg white">
+            <div class="casa__img">
+                <img src="./img/Purificador__instalado/purificador_instalado2.png" alt="Purificador instalado">
+            </div>
+            <div class="casa__text">
+                <h1>Para sua <span class="casa__text--size">EMPRESA</span></h1>
+                <p>Água de qualidade para <span class="text--weight">você</span> e sua <span class="text--weight">família</span>, com a tecnologia 'Melt Blown' que retém impurezas, e carvão ativado com prata coloidal para redução de cloro, odores e sabores. Elimina o abre de fecha da geladeira, troca-troca de garrafões. Possuem enorme praticidade e facilidade na instalação podendo ser fixados na parede ou postos sobre bancada.  </p>
+                <button class="casa__btn" value="purificadores__residenciais" onclick="redirecionaModelo(event);">VER MODELOS RESIDENCIAIS</button>
+            </div>
+        </div>
+    </section> -->
+    <section class="faq">
+        <h1 class="faq__title">Perguntas Frequentes</h1>
+        <div class="faq__bg">
+            <div class="faq__questions" id="q1" onclick=faq(this.id);>
+                <p id="q1" class="faq__questions--color"><span class="sinalMais"><i class="fa-solid fa-caret-down"></i></span> O QUE EU PRECISO PARA INSTALAR O PURIFICADOR?</p>
+                <p class="faq__answer">É necessário que tenha um ponto de água livre. Caso não haja, é possível compartilhar da torneira por meio de bifurcação com adaptadores. <span class="text--underline">consulte antes se é possível compartilhar pela torneira com um de nossos vendedores**</span></p>
+            </div>
+            <div class="faq__questions" id="q2" onclick=faq(this.id);>
+                <p id="q2" class="faq__questions--color"><span class="sinalMais"><i class="fa-solid fa-caret-down"></i></span> POSSO INSTALAR O PURIFICADOR NA PAREDE?</p>
+                <p class="faq__answer">Sim, na caixa do produto já acompanha o suporte de instalação na parede.</p>
+            </div>
+            <div class="faq__questions" id="q3" onclick=faq(this.id);>
+                <p id="q3" class="faq__questions--color"><span class="sinalMais"><i class="fa-solid fa-caret-down"></i></span> O QUE ACOMPANHA NA CAIXA DO PURIFICADOR</p>
+                <p class="faq__answer">Acompanha registro entrada d' água, suporte para instalação na parede, 1.5M de mangueira 3/8" e manual do usuário. O elemento filtrante já vai instalado no aparleho.</p>
+            </div> 
+            <div class="faq__questions" id="q4" onclick=faq(this.id);>
+                <p id="q4" class="faq__questions--color"><span class="sinalMais"><i class="fa-solid fa-caret-down"></i></span> QUAL A VIDA ÚTIL DO ELEMENTO FILTRANTE (REFIL)?</p>
+                <p class="faq__answer">Ele pode processar cerca de 4 mil litros de água, o que equivale a cerca de 9 a 12 meses. No entanto isso depende da qualidade da água que chega até o aparelho.</p>
+            </div>
+            <div class="faq__questions" id="q5" onclick=faq(this.id);>
+                <p id="q5" class="faq__questions--color"><span class="sinalMais"><i class="fa-solid fa-caret-down"></i></span> QUAL A FUNÇÃO DO ELEMENTO FILTRANTE?</p>
+                <p class="faq__answer">Ele é o resposável por realizar a purificação da água. Retirarando os sedimentos maiores que 5 micra, reduzindo o cloro proveniente. Já a prata coloidal impregnada no carvão ativado inibe a proliferação de bactérias.</p>
+            </div>   
+        </div>
+    </section>
+    <section class="mapa">
+        <div class="mapa__bg">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.280509558448!2d-48.166770185589264!3d-21.76940200374562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f14e7f7dd0f1%3A0xebfbcab33b455ab4!2sAlpes%20Purificadores%20de%20%C3%81gua%20%7C%20Bebedouros%20%7C%20M%C3%A1quinas%20de%20Gelo!5e0!3m2!1spt-BR!2sbr!4v1671189389900!5m2!1spt-BR!2sbr" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="mapa__bg">
+            <div class="mapa__form">
+                <form action="" method="post">
+                    <h1>Solicitar atendimento</h1>
+                    <input class='nome' type="text" name="post-name" placeholder="Nome">
+                    <input class='telefone' type="tel" name="post-tel" placeholder="(DDD) Telefone" onkeyup="digitoTelefone(event)">
+                    <input class='email' type="email" name="post-email" placeholder="E-mail">
+                    <textarea class='mensagem' name="comentario" rows="5" placeholder="Mensagem"></textarea>
+                    <button class="enviar">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./scripts/swiper.js"></script>
+<script src="./scripts/faq.js"></script>
+</html>
+
