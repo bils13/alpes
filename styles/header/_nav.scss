@@ -1,7 +1,6 @@
 .nav {
     position: sticky;
-    top: 0;
-    max-width: 100vw;
+    width: 100vw;
     background-color: $cor-secundaria;
     display: flex;
     flex-direction: row;
@@ -10,7 +9,7 @@
     font-family: $fonte-principal;
     padding: 5px;
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.2);
-    z-index: 1; //animação do banner debaixo estava sobrepondo a nav
+    z-index: 2; //animação do banner debaixo estava sobrepondo a nav
     &__logo {
         height: 50px;
         width: 50px;
@@ -20,8 +19,10 @@
         }
     }
     &__text p {
-        font-family: "Dancing Script", sans-serif;
-        font-size: 1.5em;
+        font-family: $rubik;
+        font-weight: 700;
+        font-size: 1em;
+        text-transform: uppercase;
         color: $cor-primaria;
         word-wrap: wrap;
     }

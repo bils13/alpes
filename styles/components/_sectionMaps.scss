@@ -1,11 +1,60 @@
 .mapa {
+    padding: 20px;
     max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: $cor-secundaria;
     &__bg {
-        max-width: 100%;
+        width: 50%;
         display: flex;
         justify-content: center;
         iframe {
-            padding: 30px;
+            border-radius: 15px;
+            height: 300px;
+            width: 80%;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        h1 {
+            font-family: $fonte-principal;
+            font-size: 2em;
+            color: $cor-primaria;
+        }
+        &--size {
+            margin-top: 10px;
+            font-family: $rubik;
+            font-size: 1em;
+            color: $cor-primaria;
+        }
+    }
+    &__certificados {
+        p {
+            margin-top: 10px;
+            text-align: center;
+            color: $cor-primaria;
+            font-family: $fonte-principal;
+            font-weight: bold;
+            font-style: italic;
+        }
+        img {
+            margin-top: 10px;
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .mapa {
+        flex-direction: column;
+        &__bg {
+            margin-bottom: 20px;
+            width: 100%;
         }
     }
 }

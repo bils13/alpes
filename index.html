@@ -16,13 +16,13 @@
                 <img src="./img/logo.png" alt="Logo Alpes Conforto Térmico" class="nav__logo--size">
             </div>
             <div class="nav__text">
-                <p>Desde 1996 entregando qualidade e satisfação no segmento de venda de purificadores.</p>
+                <p>Revenda e Assistência Técnica autorizada da Everest (SOFT)</p>
             </div>
             <div>
                 <ul>
                     <li class="nav__list">
                         <i class="fa-solid fa-phone" style="margin-right: 2px;"></i>
-                        <button class="contato" value="footer__faleconosco" onclick="redirecionaModelo(event)">Contato</button>
+                        <button class="contato" onclick="document.querySelector(`.footer`).scrollIntoView()">Contato</button>
                     </li>
                     <li class="nav__list no--border">
                         <i class="fa-solid fa-location-dot" style="margin-right: 2px;"></i>
@@ -253,16 +253,64 @@
                 <p id="q5" class="faq__questions--color"><span class="sinalMais"><i class="fa-solid fa-caret-down"></i></span> QUAL A FUNÇÃO DO ELEMENTO FILTRANTE?</p>
                 <p class="faq__answer">Ele é o resposável por realizar a purificação da água. Retirarando os sedimentos maiores que 5 micra, reduzindo o cloro proveniente. Já a prata coloidal impregnada no carvão ativado inibe a proliferação de bactérias.</p>
             </div>   
+            <div class="faq__questions" id="q6" onclick=faq(this.id);>
+                <p id="q5" class="faq__questions--color"><span class="sinalMais"><i class="fa-solid fa-caret-down"></i></span> QUANTO TEMPO DE GARANTIA?</p>
+                <p class="faq__answer">A garantia é de 12 meses e pode ser acionada em qualquer assistência técnica autorizada do país.</p>
+            </div> 
         </div>
     </section>
     <section class="mapa">
         <div class="mapa__bg">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.2803808978106!2d-48.16677018592439!3d-21.769406985601822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f14e7f7dd0f1%3A0xebfbcab33b455ab4!2sAlpes%20Purificadores%20de%20%C3%81gua%20%7C%20Bebedouros%20%7C%20M%C3%A1quinas%20de%20Gelo!5e0!3m2!1spt-BR!2sbr!4v1673375409578!5m2!1spt-BR!2sbr" width="1280" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.2803808978106!2d-48.16677018592439!3d-21.769406985601822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f14e7f7dd0f1%3A0xebfbcab33b455ab4!2sAlpes%20Purificadores%20de%20%C3%81gua%20%7C%20Bebedouros%20%7C%20M%C3%A1quinas%20de%20Gelo!5e0!3m2!1spt-BR!2sbr!4v1673375409578!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="mapa__bg">
+            <div class="mapa__text">
+                <h1>Sobre Nós</h1>
+                <p class="mapa__text--size">A Alpes é uma empresa autorizada dos Purificadores de Água Soft e Máquinas de Gelo da fabricante Everest em Araraquara - SP e região.</p>
+                <p class="mapa__text--size">Desde 1996 atuando na área de refrigeração, a Alpes entrega muito mais que um produto, entrega qualidade em seu serviço de instalação e assistência técnica, de prontidão, quando necessário.</p>
+                <div class="mapa__certificados">
+                    <p>Cerficados</p>
+                    <img src="./img/Certificacoes/inmetro.png" />
+                    <img src="./img/Certificacoes/abnt.png" />
+                    <img src="./img/Certificacoes/abrafipa.png" />
+                </div>
+            </div>
         </div>
     </section>
+    <section class="btn__wpp">
+        <button class="btn__wpp--border">
+            <a class="btn__link" href="https://api.whatsapp.com/send?phone=5516997041976&text=Ola,%20poderia%20me%20apresentar%20os%20purificadores%20de%20agua%20soft?">           
+                <img class="btn__wpp--tamanho" src="./img/whatsapp-logo.png" />
+            </a>
+        </button>
+    </section>
+    <footer class="footer">
+        <div class="footer__border"></div>
+        <div class="footer__products">
+            <h1>Nossos produtos:</h1>
+            <a href="https://api.whatsapp.com/send?phone=5516997041976&text=Ola,%20poderia%20me%20apresentar%20os%20purificadores%20de%20agua%20soft?">Purificador de Água</a>
+            <a href="https://api.whatsapp.com/send?phone=5516997041976&text=Ola,%20como%20funciona%20a%20troca%20do%20refil?">Troca de Refil</a>
+            <a href="https://api.whatsapp.com/send?phone=5516997041976&text=Ola,%20poderia%20me%20apresentar%20os%20bebedouros%20de%20%C3%A1gua?">Bebedouro de Água</a>
+            <a href="https://api.whatsapp.com/send?phone=5516997041976&text=Ola,%20preciso%20de%20uma%20assist%C3%AAncia%20t%C3%A9cnica!" class="no-border">Assistência Técnica</a>
+        </div>
+        <div class="footer__info">
+            <ul>
+                <li><i class="fa-solid fa-phone"></i> (16) 3324-1976</li>
+                <li><i class="fa-brands fa-whatsapp"></i> (16) 99704-1976</li>
+            </ul>
+            <ul>
+                <li><i class="fa-regular fa-envelope"></i> comercial@alpesok.com.br</li>
+            </ul>
+            <div class="footer__funcionamento">
+                <p>Segunda à sexta-feira das 08:00 até as 18:00 horas</p>
+                <p>Sábado das 08:00 até as 13:00 horas</p>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./scripts/swiper.js"></script>
 <script src="./scripts/faq.js"></script>
+<script src="./scripts/redirect.js"></script>
 </html>
 
